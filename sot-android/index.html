@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download sot.apk</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gray-100 flex items-center justify-center p-6">
+
+  <div class="bg-white shadow-lg rounded-xl p-8 max-w-md text-center">
+
+    <h1 class="text-xl font-semibold text-gray-700">
+      Mengunduh <span class="text-indigo-600">sot.apk</span>
+    </h1>
+    <p class="text-gray-500 text-sm mt-2">
+      Jika unduhan tidak otomatis, klik tombol di bawah.
+    </p>
+
+    <a href="sot.apk" download="sot.apk"
+       class="mt-6 inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-medium px-6 py-3 rounded-lg shadow">
+      Download Manual
+    </a>
+
+  </div>
+
+  <script>
+    // auto download (paling simple)
+    window.onload = () => {
+      const a = document.createElement('a');
+      a.href = "sot.apk";
+      a.download = "sot.apk";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+    };
+  </script>
+
+</body>
+</html>
